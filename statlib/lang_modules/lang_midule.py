@@ -5,6 +5,7 @@ from typing import List, Callable
 
 
 class LanguageModule:
+    """Base class for programming language modules"""
     def __init__(self):
         self.function_name_snake_case = True
         self.variable_name_snake_case = True

@@ -1,3 +1,5 @@
+"""Functions for static word analysis."""
+
 from nltk import pos_tag
 from typing import List, Tuple, Callable
 from collections import Counter

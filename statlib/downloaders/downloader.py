@@ -5,6 +5,7 @@ from typing import List
 
 
 class Downloader:
+    """Base class for Git repositories loaders."""
     def get_file_paths(self, root_path: str) -> List[str]:
         file_paths = []
 

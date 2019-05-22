@@ -11,6 +11,7 @@ PYTHON_FILE_EXTENTION = 'py'
 
 
 class PythonModule(LanguageModule):
+    """Python file analysis module"""
     def __init__(self, file_paths: List[str]):
         super().__init__()
         self.function_name_snake_case = True

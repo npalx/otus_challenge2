@@ -9,6 +9,7 @@ from git.exc import GitCommandError
 
 
 class Github(Downloader):
+    """Class for loading github repositories."""
     def __init__(self, repository_url: str):
         self.repository_url = repository_url
         self.repository_name = self._get_repository_name()
@@ -18,7 +19,7 @@ class Github(Downloader):
         if search_result:
             repository_name = search_result[1]
         else:
-            raise AttributeError
+            raise Exception('Invalid URL path.')
         return repository_name
 
     def download(self) -> List[str]:
